@@ -11,7 +11,7 @@ scheduler.start()
 atexit.register(lambda: scheduler.shutdown())
 
 app = Flask(__name__)
-
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 60
 
 @app.route('/', methods=['GET','POST'])
 def index():
@@ -32,6 +32,7 @@ def res():
 @app.route('/scores')
 def scores():
     return render_template('scores.html')
+
 
 if __name__ == '__main__':
     app.run()

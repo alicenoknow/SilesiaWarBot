@@ -1,0 +1,8 @@
+res_txt = "C:/Users/Alicja/PycharmProjects/flaskGeo/data/res.txt"
+res_html = "C:/Users/Alicja/PycharmProjects/flaskGeo/templates/res.html"
+scores_html = "C:/Users/Alicja/PycharmProjects/flaskGeo/templates/scores.html"
+img_path = "C:/Users/Alicja/PycharmProjects/flaskGeo/static/res.png"
+shp = "C:/Users/Alicja/PycharmProjects/flaskGeo/data/better_sil2.shp"
+neigh_data = "C:/Users/Alicja/PycharmProjects/flaskGeo/data/neighbours.data"
+currneigh_data = "C:/Users/Alicja/PycharmProjects/flaskGeo/data/neighbours.data"
+conq_data = "C:/Users/Alicja/PycharmProjects/flaskGeo/data/conquered.data"

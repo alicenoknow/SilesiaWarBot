@@ -1,11 +1,7 @@
 import logging
-
+import os
 from silesia_war_bot import *
-
-shp = "C:/Users/Alicja/PycharmProjects/flaskGeo/data/better_sil2.shp"
-neigh_data = "C:/Users/Alicja/PycharmProjects/flaskGeo/data/neighbours.data"
-currneigh_data = "C:/Users/Alicja/PycharmProjects/flaskGeo/data/neighbours.data"
-conq_data = "C:/Users/Alicja/PycharmProjects/flaskGeo/data/conquered.data"
+from paths import *
 
 
 def init():
@@ -42,3 +38,5 @@ def reset():
     war_bot = init()
     war_bot.reset()
     war_bot.close()
+    if os.path.exists(img_path):
+        os.remove(img_path)
