@@ -1,14 +1,14 @@
 NAME_2	Score	Counquered territories
 Zory	0.5203676614052479	1
-zywiecki	0.5948719334706545	1
+zywiecki	0.9131927717280119	2
 Swietochlowice	0.4264876403093933	1
-bedzinski	0.6091766814939359	1
+bedzinski	0.0	0
 Bielsko-Biala	0.448745215585835	1
-bielski	1.0488407872855448	2
+bielski	0.9089644694711597	2
 bierunsko-ledzinski	0.3239811572564643	1
 Bytom	0.2451406353405519	1
 Chorzow	0.0	0
-cieszynski	0.3183208382573574	1
+cieszynski	0.0	0
 Czestochowa	0.0	0
 czestochowski	0.5123135790478484	1
 Dabrowa Gornicza	1.0032406661321653	2
@@ -19,10 +19,10 @@ Jaworzno	1.3404101635080394	2
 klobucki	0.7402008148718048	2
 Katowice	0.6298172665154402	2
 lubliniecki	0.0	0
-mikolowski	0.3513787250178332	1
+mikolowski	0.0	0
 Myslowice	0.0	0
 myszkowski	0.0	0
-Piekary Slaskie	1.093278456382253	2
+Piekary Slaskie	1.702455137876189	3
 pszczynski	0.0	0
 raciborski	0.9007712343825904	2
 Ruda Slaska	0.2842346795392247	1
@@ -31,7 +31,7 @@ rybnicki	0.0	0
 Siemianowice Slaskie	0.0	0
 Sosnowiec	0.3289377708184779	1
 tarnogorski	0.9533253078847456	2
-Tychy	0.3519687129353873	1
+Tychy	0.8432237557676054	2
 wodzislawski	0.0	0
 Zabrze	0.4771887204677518	1
 zawiercianski	0.3840419942494613	1
