@@ -1,0 +1,13 @@
+https://katowice.stat.gov.pl/publikacje-i-foldery/roczniki-statystyczne/wojewodztwo-slaskie-2019-podregiony-powiaty-gminy,5,18.html
+
+Dane z 2018:
+- populacja w tysiącach
+- wskaźnik zdrowia (łóżka szpitalne na 10 tys. mieszkańców i liczba mieszkańców na jeden podmiot opieki zdrowotnej)
+- wypożyczenia książek
+- przychód powiatu (na podstawie dochodu oraz wydatków powiatu)
+
+Score - średnia arytmetyczna ^^
+
+One record was missing of hospital beds values. It was filled with mean value from column.
+
+Attacker is chosen by picking random county, each county can be picked with probability relying on its score.

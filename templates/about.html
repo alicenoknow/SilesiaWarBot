@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="../static/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Silesia War Bot</title>
+
+  </head>
+  <body>
+    <div class="header">Silesia War Bot</div>
+    <div class="container">  
+        <button onclick="window.location.href='{{ url_for( 'index' ) }}';" class="butt1">Current</button>
+        <button onclick="window.location.href='{{ url_for( 'ranking' ) }}';" class="butt1">Statistics</button>
+
+    </div>
+    <div id="desc">
+    <p>
+        Silesia War Bot is war simulation inspired by <a id="link" href="https://worldwarbot.com/bots/" target="_blank">World War Bot</a>.
+        There are 36 counties fighting for the hegemony over Silesia. Important factor of the victory is county score, based on <a id="link" href="https://katowice.stat.gov.pl/publikacje-i-foldery/roczniki-statystyczne/wojewodztwo-slaskie-2019-podregiony-powiaty-gminy,5,18.html" target="_blank">data</a> from 2018:
+    </p>
+        <ul>
+            <li>population</li>
+            <li>healthcare (hospital beds per 10k inhabitants and inhabitants per 1 healthcare entity)</li>
+            <li>readership (book loans per inhabitant)</li>
+            <li>net income (based on gross income and expenses)</li>
+        </ul>
+    <p>
+        To find initial score all features were scaled to values from 0 to 1, then the average of them was taken.
+        During the war a score is calculated as mean value of scores of all subordinate counties. The score is then scaled to present probability of a new attack. 
+        The higher the score is, the more likely is that the county will attack a neighbour. The game finishes when only one player lefts and the player controls all other counties.
+    </p>
+    </div>
+    </body>
+</html>

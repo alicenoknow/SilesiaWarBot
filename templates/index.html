@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="../static/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Silesia War Bot</title>
+
+  </head>
+  <body>
+    <div class="header">Silesia War Bot</div>
+    <div class="container">  
+        <button onclick="window.location.href='{{ url_for( 'about' ) }}';" class="butt1">About</button>
+        <button onclick="window.location.href='{{ url_for( 'ranking' ) }}';" class="butt1">Statistics</button>
+    </div>
+    <p>
+    <img class="img" src="{{url_for('static', filename='res.png')}}" width="400" height="400" alt="map">
+    </p>
+    <p id="txt">
+    <iframe src='{{ url_for( 'res' ) }}'; width=100% height=70% style="border:none;"></iframe>
+    </p>
+    </body>
+</html>

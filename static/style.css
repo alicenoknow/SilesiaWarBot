@@ -1,0 +1,123 @@
+*{
+    font-family: Helvetica;
+    background-color: rgba(16, 12, 59);
+    font-size: 30px;
+}
+
+#desc > * {
+    color: silver;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#link {
+    color: hotpink;
+  }
+
+#sheet {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    color:silver;
+    border:none;
+    align-self: center;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+  }
+
+.header{
+    text-align: center;
+    height: 30%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: silver;
+    font-size: 50px;
+    width: 100%;
+    background-color: rgba(16, 12, 59, 0.767);
+}
+
+#includedContent{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+    color:silver;
+    border:none;
+    align-self: center;
+}
+
+#txt{
+    display: flex;
+    width: 45%;
+    height: 600px;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 30px;
+    align-content: center;
+    flex-direction: column;
+}
+
+.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    min-height: 20vh;
+    }
+
+.butt1 {
+    width: 100%;
+    height: 80px;
+    font-family: Helvetica;
+    border: none;
+    color: white;
+    background-color: rgb(30, 147, 155);
+    transition: ease-out 0.3s;
+    z-index: 1;
+    outline: none;
+    position: relative;
+}
+
+.butt1:hover{
+    cursor: pointer;
+    color: rgba(16, 12, 59, 0.767);
+}
+
+.butt1:before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: silver;
+
+}
+
+.butt1:hover:before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.img {
+    position: relative;
+    display: block;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 45%;
+    height: 45%;
+    float: left;
+}
