@@ -12,6 +12,7 @@
 ### You can also follow ranking with current performance of counties:
 ![alt text](https://github.com/alicenoknow/SilesiaWarBot/blob/master/img3.png?raw=true)
 ##
+### Using Flask with a scheduler one round is performed every minute, the results change on the webpage after refreshing
 ## Technologies
 #### Python 3.8.5 + Flask + HTML5 + CSS
 ## Author:
