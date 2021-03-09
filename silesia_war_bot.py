@@ -18,7 +18,7 @@ def get_date():
 
 class BOT:
     def __init__(self, counties, curr_neighbours, conquered, neighbours):
-        self.counties = counties
+        self.counties = counties.copy()
         self.conquered = conquered
         self.curr_neighbours = curr_neighbours
         self.neighbours = neighbours
@@ -147,7 +147,7 @@ class BOT:
         if not self.is_in_game(self.defender):
             msg += "The county " + str(self.counties.loc[self.defender, 'NAME_2']) + " was completely destroyed."
         if self.is_gameover():
-            msg += "All territories have been conquered by county " + str(
+            msg += " All territories have been conquered by county " + str(
                 self.counties.loc[self.attacker, 'NAME_2']) + ". Game over."
 
         with open(res_txt, 'r') as contents:
@@ -182,10 +182,8 @@ class BOT:
         self.find_attacker()
         self.find_territory()
         self.find_defender()
-
         self.remove_territory_from_loser()
         self.add_territory_to_winner()
-
         self.plot_map()
         self.save_result()
         self.save_ranking()

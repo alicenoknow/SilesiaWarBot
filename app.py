@@ -3,15 +3,17 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from simulation import simulate
 import atexit
 
+# TODO: 404 page, deploy somewhere
+
 scheduler = BackgroundScheduler()
-scheduler.add_job(func=simulate, trigger="interval", minutes=1)
+scheduler.add_job(func=simulate, trigger="interval", seconds=5)
 scheduler.start()
 
 # Shut down the scheduler when exiting the app
 atexit.register(lambda: scheduler.shutdown())
 
 app = Flask(__name__)
-app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 60
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 1
 
 @app.route('/', methods=['GET','POST'])
 def index():

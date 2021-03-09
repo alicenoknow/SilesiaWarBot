@@ -13,11 +13,14 @@ def init():
             conquered = pickle.load(fd3)
         with open(neigh_data, 'rb') as fd1:
             neighbours = pickle.load(fd1)
+        fd1.close()
+        fd2.close()
+        fd3.close()
+
     except Exception as e:
         msg = "Cannot read required files! " + str(e)
         logging.error(msg)
         exit()
-
     return BOT(counties, curr_neighbours, conquered, neighbours)
 
 
