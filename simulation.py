@@ -43,3 +43,4 @@ def reset():
     war_bot.close()
     if os.path.exists(img_path):
         os.remove(img_path)
+
