@@ -1,6 +1,8 @@
 from flask import Flask, render_template
 from apscheduler.schedulers.background import BackgroundScheduler
 from simulation import simulate
+from paths import img_path
+import os
 import atexit
 
 # TODO: 404 page, deploy somewhere
@@ -17,15 +19,21 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 1
 
 @app.route('/', methods=['GET','POST'])
 def index():
-    return render_template('index.html')
+    if simulation_started():
+        return render_template('index.html')
+    return render_template("sorry.html")
 
 @app.route('/about')
 def about():
-    return render_template('about.html')
+    if simulation_started():
+        return render_template('about.html')
+    return render_template("sorry.html")
 
 @app.route('/ranking')
 def ranking():
-    return render_template('ranking.html')
+    if simulation_started():
+        return render_template('ranking.html')
+    return render_template("sorry.html")
 
 @app.route('/res')
 def res():
@@ -34,6 +42,10 @@ def res():
 @app.route('/scores')
 def scores():
     return render_template('scores.html')
+
+
+def simulation_started():
+    return os.path.exists(img_path)
 
 
 if __name__ == '__main__':

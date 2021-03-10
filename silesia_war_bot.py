@@ -135,6 +135,7 @@ class BOT:
         self.counties.plot(ax=ax, column="OWNER", cmap="gist_ncar", edgecolor='grey', alpha=0.4)
         self.counties.plot(ax=ax, column="Result", cmap='spring', edgecolor='black', legend=True)
         plt.savefig(img_path)
+        plt.clf()
         del self.counties["Result"]
 
     def save_result(self):
