@@ -8,7 +8,7 @@ import atexit
 # TODO: 404 page, deploy somewhere
 
 scheduler = BackgroundScheduler()
-scheduler.add_job(func=simulate, trigger="interval", seconds=5)
+scheduler.add_job(func=simulate, trigger="interval", seconds=60)
 scheduler.start()
 
 # Shut down the scheduler when exiting the app
@@ -49,4 +49,4 @@ def simulation_started():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
