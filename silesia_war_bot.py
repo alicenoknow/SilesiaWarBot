@@ -124,10 +124,12 @@ class BOT:
         self.curr_neighbours[county] = [x for x in curr if x not in self.conquered[self.attacker]]
 
     def plot_map(self):
+
         self.counties["Result"] = None
         for i in self.conquered[self.attacker]:
             self.counties.loc[i, "Result"] = "Conqueror"
         self.counties.loc[self.territory, "Result"] = "Conquered"
+
         fig, ax = plt.subplots(1)
         ax.axes.xaxis.set_visible(False)
         ax.axes.yaxis.set_visible(False)
