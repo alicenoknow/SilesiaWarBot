@@ -10,6 +10,7 @@ Fiona==1.8.13.post1
 Flask
 GDAL==3.0.2
 geopandas
+gunicorn==20.0.4
 itsdangerous
 Jinja2
 kiwisolver
